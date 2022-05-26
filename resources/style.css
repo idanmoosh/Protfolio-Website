@@ -25,8 +25,8 @@ yellow- #fadb6f
 /*general*/
 body{
     flex-direction: column;
-    background-color:  #070324;
-    color: rgb(236, 213, 168);
+    background-color:  white;
+    color: black;
     font-family: 'Plus Jakarta Sans', sans-serif;
 
 }
@@ -37,20 +37,16 @@ body{
 h1{
     font-size: 3rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #fab96f;
+    color: black;
 
 
 }
 h2{
-    color: #fab96f;
-    font-size: 1.75rem;
+    color: black;
+    font-size: 1.8rem;
 }
 
 /*header*/
-header h1 span{
-    color: #fa6d6f;
-    font-size: 3rem ;
-}
 
 header{
     padding: .5rem;
@@ -61,6 +57,7 @@ header{
 header h1{
     padding-left: 2rem;
     font-family: 'Fugaz One', cursive;
+    text-shadow: 1px 1px #fa6d6f;
 
 }
 header ul{
@@ -77,6 +74,9 @@ header li{
     padding-left: 1rem;
     font-size: 1.4rem;
 }
+header a:hover{
+    color: black;
+}
 /*margin1*/
 .margin{
     margin: auto;
@@ -90,33 +90,142 @@ header li{
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
+    width: 100% ;
+    height: fit-content;
+    
 }
 .about span{
     color: #fa6d6f;
+    font-size: 1.3rem;
 }
 .about h1{
-    width: 100% ;
+    width: fit-content ;
 }
 .about p{
+    font-size: 1.3rem;
+    word-spacing: 0.25rem;
     padding: 1rem 1rem;
-    width: 40%;
+    width: 50%;
+    line-height: 2.5rem;
 }
 .about-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+     
 }
-.img-container{
-    width: 20vw;
-    height: 40vh;
-    color: #fab96f;
-    border-color: 1px solid orange;
+
+
+.about img{
+    width: 8rem;
+    align-items: flex-end;  
+    border-radius: 10%;
 }
+
 
 /* experience*/
 .experience{
+    width: 100%;
     padding: 2rem;
 }
 .experience ul{
+    display: flex;
+    flex-wrap: wrap;
     padding:1rem;
     list-style: none;
+    justify-content: center;
+}
+.experience li{
+    display: flex;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.svg{
+
+    margin-right: 1rem;
+    padding: 0.2rem;
+    height: 1.6rem;
+    width: auto;
+}
+
+/* projects */
+.projects{
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.project-container{
+    flex: 1 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.project{
+    padding: 1rem;
+}
+
+/*footer */
+
+
+.footer-notes{
+    padding: 0.5rem;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* contact page*/
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+.contact ul{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.contact li{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.contactImg{
+    height: 1.6rem;
+    margin-right: 1rem;
+}
+.contact a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover{
+    color: #fa6d6f;
+}
+
+/* media screens*/
+
+@media only screen and(max-width=800px) {
+    h1{
+        font-size: 2rem;
+    }
+    nav{
+        display:none;
+    }
 }
