@@ -28,8 +28,8 @@ body{
     background-color:  white;
     color: black;
     font-family: 'Plus Jakarta Sans', sans-serif;
-
 }
+
 .name-logo{
     font-size: 200%;
     
@@ -154,6 +154,7 @@ header a:hover{
     padding: 0.2rem;
     height: 1.6rem;
     width: auto;
+    fill: #fa6d6f !important;
 }
 
 /* projects */
@@ -229,11 +230,19 @@ header a:hover{
  /* media screens*/
 @media (max-width:800px){
 
+    header ul{
+        padding-right: 0.5rem;
+    }
     h1{
         font-size: 2rem;
+        padding-left: 0.5rem;
+    
     }
     h2{
         font-size: 1.5rem   ;
+    }
+    .about{
+        padding: 1rem 1rem;
     }
     .about-content{
         flex-direction: column;
@@ -243,16 +252,19 @@ header a:hover{
 
     }
     .about p{
+        font-size: 1.25rem;
         justify-content: center;
         width: 80% ;
         margin: 0;
+    }
+    .about span{
+        font-size: 1.25rem;
     }
     .about img{
         
         justify-content: center ;
         margin: 0;
         max-height: 50vh;
-
     }
    
 
@@ -265,6 +277,11 @@ header a:hover{
         margin: 0;
         width: 80%;
     }
-
-    
+    .experience{
+        padding: 1rem ;
+    }
+    .projects{
+        padding: 1rem;
+    }  
 }
+
